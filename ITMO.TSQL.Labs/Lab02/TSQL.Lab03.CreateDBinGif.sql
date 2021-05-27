@@ -1,3 +1,4 @@
+/*Создать базу данных соответсвующую картинке*/
 CREATE DATABASE MyDB
 ON
 PRIMARY
@@ -25,3 +26,8 @@ LOG ON
 	FILEGROWTH = 10%)
 COLLATE SQL_Latin1_General_CP1_CI_AS
 GO
+
+/*Изменить БД установив в ней файловую группу по умолчанию*/
+
+ALTER DATABASE MyDB
+MODIFY FILEGROUP MyDB_FG1 DEFAULT;
