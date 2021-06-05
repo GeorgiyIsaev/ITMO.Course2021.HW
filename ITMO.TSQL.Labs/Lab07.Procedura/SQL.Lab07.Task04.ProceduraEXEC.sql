@@ -1,0 +1,1 @@
+EXECUTE CustomerDetails.apf_CusMovement 1,'1.08.2008','31.08.2008';
