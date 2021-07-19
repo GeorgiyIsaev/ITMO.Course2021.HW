@@ -1,0 +1,32 @@
+<?xml version = "1.0" encoding = "utf-8" ?>
+<myns:Timetable xmlns:myns = "http://www.itmo.ru/xml/lessons" xmlns:exns = "https://www.w3schools.com/xml/default.asp">
+	<myns:subject>
+		<myns:subject id = "1">
+			<myns:name>Технологии программирования</myns:name>
+			<myns:teacher>Осипов Н.А.</myns:teacher>
+			<myns:startDate>22.03.2021</myns:startDate>
+			<myns:finishDate>09.04.2021</myns:finishDate>
+		</myns:subject>
+		
+		<myns:subject id = "2">
+			<myns:name>Программирование на C#</myns:name>
+			<myns:teacher>Смольянинов А.В..</myns:teacher>
+			<myns:startDate>21.04.2021</myns:startDate>
+			<myns:finishDate>14.05.2021</myns:finishDate>
+		</myns:subject>
+		
+		<myns:subject id = "3">
+			<myns:name>Разработка Windows-приложений на C#</myns:name>
+			<myns:teacher>>Осипов Н.А.</myns:teacher>
+			<myns:startDate>21.06.2021</myns:startDate>
+			<myns:finishDate>09.07.2021</myns:finishDate>
+		</myns:subject>
+		
+		<myns:subject id = "4">
+			<myns:name>Основы технологий разметки</myns:name>
+			<myns:teacher>Смольянинов А.В.</myns:teacher>
+			<myns:startDate>12.07.2021</myns:startDate>
+			<myns:finishDate>18.07.2021</myns:finishDate>
+		</myns:subject>
+	</myns:subject>
+</myns:Timetable>

@@ -8,7 +8,7 @@ git status
 git add /c/AndroidRepository/ITMO.Course2021.HW
 
 4) Оставить коммит об изменнии:
-git commit -m "add html.lab02.Ex03 full"
+git commit -m "add lab03.ex01"
 
 5) Отправить все на сервер:
 git push
