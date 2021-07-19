@@ -1,0 +1,33 @@
+<?xml version = "1.0" encoding = "utf-8" ?>
+<!DOCTYPE timetable SYSTEM "lessons_DTD.dtd">
+<Timetable>
+	<subjects>
+		<subject id = "1">
+			<name>Технологии программирования</name>
+			<teacher>Осипов Н.А.</teacher>
+			<startDate>22.03.2021</startDate>
+			<finishDate>09.04.2021</finishDate>
+		</subject>
+		
+		<subject id = "2">
+			<name>Программирование на C#</name>
+			<teacher>Смольянинов А.В..</teacher>
+			<startDate>21.04.2021</startDate>
+			<finishDate>14.05.2021</finishDate>
+		</subject>
+		
+		<subject id = "3">
+			<name>Разработка Windows-приложений на C#</name>
+			<teacher>>Осипов Н.А.</teacher>
+			<startDate>21.06.2021</startDate>
+			<finishDate>09.07.2021</finishDate>
+		</subject>
+		
+		<subject id = "4">
+			<name>Основы технологий разметки</name>
+			<teacher>Смольянинов А.В.</teacher>
+			<startDate>12.07.2021</startDate>
+			<finishDate>18.07.2021</finishDate>
+		</subject>
+	</subjects>
+</Timetable>

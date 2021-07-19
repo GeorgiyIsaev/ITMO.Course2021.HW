@@ -1,0 +1,9 @@
+<!ELEMENT timetable (subjects)*>
+    <!ELEMENT subjects (subject)*>
+    <!ELEMENT subject (name|teacher|startDate|finishDate)*>
+    <!ATTLIST subject
+        id CDATA #REQUIRED>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT teacher (#PCDATA)>
+    <!ELEMENT startDate (#PCDATA)>
+    <!ELEMENT finishDate (#PCDATA)>
