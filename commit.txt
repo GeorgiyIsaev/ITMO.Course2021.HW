@@ -1,14 +1,14 @@
 1) Зайти в репозиторий:
-cd /c/AndroidRepository/ITMO.Course2021.HW
+cd /c/REPOSITORY/ITMO.Course2021.HW
 
 2) Приверить изменения:
 git status
 
 3) Добавить папку или файл:
-git add /c/AndroidRepository/ITMO.Course2021.HW
+git add /c/REPOSITORY/ITMO.Course2021.HW
 
 4) Оставить коммит об изменнии:
-git commit -m "add lab03.ex03"
+git commit -m "add oracle lab03"
 
 5) Отправить все на сервер:
 git push
