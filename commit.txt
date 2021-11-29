@@ -8,7 +8,7 @@ git status
 git add /c/REPOSITORY/ITMO.Course2021.HW
 
 4) Оставить коммит об изменнии:
-git commit -m "add oracle lab03"
+git commit -m "add oracle lab10"
 
 5) Отправить все на сервер:
 git push
