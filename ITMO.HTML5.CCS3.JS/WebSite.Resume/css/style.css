@@ -52,7 +52,7 @@ body {
 #navbar li a {
     display: block;
     padding: 6px;
-    width: 100px;
+    width: 140px;
     color: #fff;
     text-decoration: none;
     text-align: center;
@@ -61,3 +61,65 @@ body {
 #navbar li:hover { background-color: #f90; }
 #navbar ul li:hover { background-color: #666; }
 /*Конец меню*/
+
+
+/*Главная секция со статьями*/
+#main-section {
+    width:1000px;
+    margin:auto;
+    margin-top: 20px;
+    text-align:center;
+}
+
+/*Статьи*/
+article {
+    vertical-align: top;
+    max-width: 28%;
+    display: inline-block;
+    border: 1px solid black;
+    padding: 5px;
+    margin: auto;
+    height:370px;
+    font-weight:400;
+    box-shadow: 5px 5px 5px rgba(0,0,0,.2);
+    border-radius:10px 20px/30px 30px 40px;
+    transition-delay: 3s;
+    transition: box-shadow 300ms;  
+}  
+article:hover{
+    box-shadow: 6px 6px 10px rgba(0,0,0,.7);
+}  
+article:active {
+    opacity:.4;
+}  
+article img{
+    width: 80%;
+    height:100px;
+}
+
+  /*Правки для статетй вики*/
+.article-wike{
+    height:auto;
+    font-weight:100;
+    border:none;
+    display: block;
+    max-width: 800px;
+    text-align: start;
+    padding: 0px;
+}
+
+
+  /*Главное фото*/
+ .label-info div{
+    text-align:center;
+    font-size: 18px;
+ }
+
+
+.img-myfoto{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin: auto;
+    top:0px;
+}
