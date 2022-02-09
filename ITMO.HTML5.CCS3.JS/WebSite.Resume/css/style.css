@@ -89,9 +89,6 @@ body {
 .article-git:hover{
     box-shadow: 6px 6px 10px rgba(0,0,0,.7);
 }  
-/*article:active {
-    opacity:.4;
-}  */
 .article-git img{
     width: 50%;
     height:100px;
