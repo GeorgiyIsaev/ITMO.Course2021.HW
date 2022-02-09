@@ -9,6 +9,8 @@ git add /c/REPOSITORY/ITMO.Course2021.HW
 
 4) Оставить коммит об изменнии:
 git commit -m "CREATE labs HTML5-CSS3-JS"
+git commit -m "add index.html"
+git commit -m "правка стилей"
 git commit -m "readme.md"
 
 5) Отправить все на сервер:
