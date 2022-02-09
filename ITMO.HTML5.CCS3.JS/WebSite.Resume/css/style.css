@@ -8,6 +8,12 @@ body {
     text-shadow:2px 2px 5px rgba(0,0,0,.3);
     margin-top:100px;
 }
+main{
+    max-width: 1000px;
+    min-width: 320px;
+    margin: 0 auto;
+    position: relative;
+}
 
 /*Главный заголовок*/
 #main-header {
@@ -20,6 +26,11 @@ body {
     text-align: center;
     font-weight: bold;
     font-size: 34px;
+
+    max-width: 1000px;
+    min-width: 320px;
+    margin: 0 auto;
+    position: relative;
 }
 
 
@@ -78,7 +89,7 @@ body {
     display: inline-block;
     border: 1px solid black;
     padding: 5px;
-    margin: auto;
+    margin: 0 10px 10px 10px;
     height:255px;
     font-weight:400;
     box-shadow: 5px 5px 5px rgba(0,0,0,.2);
