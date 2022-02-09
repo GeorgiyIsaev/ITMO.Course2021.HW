@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&subset=cyrillic');
+
+
+body {
+    font-family:'Roboto Condensed', sans-serif;
+    font-weight:300;
+    margin:0px;
+    text-shadow:2px 2px 5px rgba(0,0,0,.3);
+    margin-top:100px;
+}
+
+/*Главный заголовок*/
+#main-header {
+    border-bottom: 2px solid #000;
+    position:absolute;
+    width:100%;
+    background: rgba(255,255,255,.7);
+    top:0px;
+    height:70px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 34px;
+}
+
+
+/*МЕНЮ*/
+#navbar ul {
+    display: none;
+    background-color: #f90;
+    position: absolute;
+    top: 100%;
+}
+#navbar li:hover ul {
+     display: block; 
+    }
+#navbar, #navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+#navbar {
+    height: 30px;
+    background-color: #666;
+    padding-left: 25px;
+    min-width: 470px;
+}
+#navbar li {
+    float: left;
+    position: relative;
+    height: 100%;
+}
+#navbar li a {
+    display: block;
+    padding: 6px;
+    width: 100px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+}
+#navbar ul li { float: none; }
+#navbar li:hover { background-color: #f90; }
+#navbar ul li:hover { background-color: #666; }
+/*Конец меню*/
