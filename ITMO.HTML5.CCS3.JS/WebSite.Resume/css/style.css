@@ -72,28 +72,28 @@ body {
 }
 
 /*Статьи*/
-article {
+.article-git {
     vertical-align: top;
     max-width: 28%;
     display: inline-block;
     border: 1px solid black;
     padding: 5px;
     margin: auto;
-    height:370px;
+    height:255px;
     font-weight:400;
     box-shadow: 5px 5px 5px rgba(0,0,0,.2);
     border-radius:10px 20px/30px 30px 40px;
     transition-delay: 3s;
     transition: box-shadow 300ms;  
 }  
-article:hover{
+.article-git:hover{
     box-shadow: 6px 6px 10px rgba(0,0,0,.7);
 }  
-article:active {
+/*article:active {
     opacity:.4;
-}  
-article img{
-    width: 80%;
+}  */
+.article-git img{
+    width: 50%;
     height:100px;
 }
 
