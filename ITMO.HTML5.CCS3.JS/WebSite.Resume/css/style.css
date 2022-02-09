@@ -117,7 +117,17 @@ main{
 }
 
 
+
   /*Главное фото*/
+.label-info {
+    width: 200px;
+}
+.colon-spase{
+    width: 50px;
+}
+
+
+
  .label-info div{
     text-align:center;
     font-size: 18px;
@@ -127,6 +137,15 @@ main{
 .img-myfoto{
     height: 200px;
     width: 200px;
+    border-radius: 50%;
+    margin: auto;
+    top:0px;
+}
+
+
+.logo-resume{
+    height: 40px;
+    width: 40px;
     border-radius: 50%;
     margin: auto;
     top:0px;
