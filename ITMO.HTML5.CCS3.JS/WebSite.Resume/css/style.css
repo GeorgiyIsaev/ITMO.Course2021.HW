@@ -120,7 +120,8 @@ main{
 
   /*Главное фото*/
 .label-info {
-    width: 200px;
+    vertical-align: top;
+    width: 400px;
 }
 .colon-spase{
     width: 50px;
@@ -139,7 +140,8 @@ main{
     width: 200px;
     border-radius: 50%;
     margin: auto;
-    top:0px;
+    display: block
+ 
 }
 
 
