@@ -167,10 +167,21 @@ footer{
 }
 
 
-.logo-resume{
+.logo-resume {
     height: 40px;
     width: 40px;
     border-radius: 50%;
-    margin: auto;
-    top:0px;
+    margin: 20 20 0 0;
+    top: 0px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+.blok-resume{
+    max-width: 500;
+}
+
+.blok-resume div{
+    display: inline-block;
 }
