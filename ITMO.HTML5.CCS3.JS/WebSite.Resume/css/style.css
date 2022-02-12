@@ -184,4 +184,5 @@ footer{
 
 .blok-resume div{
     display: inline-block;
+    max-width: 400;
 }
