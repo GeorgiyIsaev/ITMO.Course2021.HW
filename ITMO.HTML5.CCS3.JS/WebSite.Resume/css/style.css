@@ -195,7 +195,7 @@ footer{
     margin: auto;
 }
 
-.my-input, .my-textarea {
+.my-input{
     display:block;
     width:98%;
     margin:10px;
@@ -204,7 +204,10 @@ footer{
     border-radius: 10px;
     resize:none;
 }
-  
+.my-textarea {
+    height:64px;
+} 
+
 .my-input:focus {
     background: #d1fffb;
     color:#b3b3b3;
@@ -212,7 +215,7 @@ footer{
 }
 
 #go-button{
-    display:block;
+    /*display:block;*/
     height:auto;
     width:98%;
     margin:10px;
