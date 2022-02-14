@@ -186,3 +186,36 @@ footer{
     display: inline-block;
     max-width: 400;
 }
+
+
+/*Анкета рекрутера*/
+#form-anketa{
+    display:block;
+    max-width: 900;
+    margin: auto;
+}
+
+.my-input, .my-textarea {
+    display:block;
+    width:98%;
+    margin:10px;
+    padding: 10px 20px;
+    border:1px solid;
+    border-radius: 10px;
+    resize:none;
+}
+  
+.my-input:focus {
+    background: #d1fffb;
+    color:#b3b3b3;
+    outline:none;
+}
+
+#go-button{
+    display:block;
+    height:auto;
+    width:98%;
+    margin:10px;
+    padding: 10px 20px;
+    border-radius: 10px;
+}

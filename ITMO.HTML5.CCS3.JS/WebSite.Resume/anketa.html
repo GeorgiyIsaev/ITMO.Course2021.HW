@@ -8,17 +8,37 @@
       <h2 id="main-header">Резюме</h2>
     </header>
 
-    <main id="#main-section">
+    <main>
       <ul id="navbar">
         <li><a href="index.html">       Главная</a></li>
         <li><a href="articleGit.html">  Мои проекты</a></li>
         <li><a href="articleWiki.html"> Полезные ссылки</a></li>
-        <li><a href="anketa.html">      Анкта рекрута</a></li>
+        <li><a href="anketa.html">      Анкта рекрутера</a></li>
       </ul>
+      <section id="main-section" >
+               Форма для анкеты от рекрутера
+      </section>
 
-        Форма для анкеты от рекрутера
+      <form id="form-anketa">
+        <h3>Организация:</h3>
+        <input class="my-input" placeholder="Название организации.."/>
+        <input class="my-input" placeholder="Отдел.." />
+        <input class="my-input" placeholder="Направление деятельность.." />
+        <input class="my-input" placeholder="Город.." />
 
+        <h3>Требования:</h3>
+        <input class="my-input" placeholder="Требуемый язык программировании..."/>    
+        <input class="my-input" placeholder="Основной набор технологий, с которым необходимо уметь работать..."/>    
+        <textarea class="my-textarea" placeholder="Дополнительные навыки..."></textarea>
 
+        <h3>Контактная информация:</h3>
+        <input class="my-input" placeholder="E-mail...">
+        <input class="my-input" placeholder="Телефон..."/>    
+        <input class="my-input" placeholder="ФИО Рекрутера..."/>   
+        
+        <button id="go-button">Отправить</button>
+
+      </form>
     </main>
     <footer>&copy; Copyright 2022</footer>
   </body>
