@@ -31,29 +31,31 @@
                Форма для анкеты от рекрутера
       </section>
 
-      <form id="form-anketa">
+      <form id="form-anketa"> 
         <h3>Организация:</h3>
-        <input class="my-input" type="text" name="dep" placeholder="Название организации.."/>
-        <input class="my-input" type="text" name="sect" placeholder="Отдел.." />
-        <input class="my-input" type="text" name="line"  placeholder="Направление деятельность.." />
-        <input class="my-input" type="text" name="citi" placeholder="Город.." />
+ 
+       
+        <input class="my-input request" type="text" name="dep" autocomplete="on"  placeholder="Название организации.."/>
+        <input class="my-input request" type="text" name="sect" autocomplete="on" placeholder="Отдел.." />
+        <input class="my-input request" type="text" name="line" autocomplete="on" placeholder="Направление деятельность.." />
+        <input class="my-input request" type="text" name="citi" autocomplete="on"  placeholder="Город.." /> 
+    
 
         <h3>Требования:</h3>
-        <input class="my-input" placeholder="Требуемый язык программировании..."/>          
-        <textarea class="my-input my-textarea" placeholder="Основной набор технологий, с которым необходимо уметь работать..."></textarea>
-        <textarea class="my-input my-textarea" placeholder="Дополнительные навыки..."></textarea>
+        <input class="my-input request"  type="text" name="dep1" placeholder="Требуемый язык программировании..."/>          
+        <textarea class="my-input my-textarea" autocomplete="on" type="text" name="dep1" placeholder="Основной набор технологий, с которым необходимо уметь работать..."></textarea>
+        <textarea class="my-input my-textarea" autocomplete="on" type="text" name="dep1" placeholder="Дополнительные навыки..."></textarea>
 
         <h3>Контактная информация:</h3>
         <input class="my-input" name="email" placeholder="E-mail...">
         <input class="my-input" type="tel" name="tel" placeholder="Телефон..."/>    
         <input class="my-input" name="fio" placeholder="ФИО Рекрутера..."/>   
         
-        <button type="button" id="go-button">Отправить</button>
-
-      </form>
+        <button type="button" id="go-button">Отправить</button>  
+     </form> 
     </main>
     <footer>&copy; Copyright 2022</footer>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script charset="utf-8" src="./js/main.js"></script>
+    <script charset="utf-8" src="./js/main.js"></script>  
   </body>
 </html>

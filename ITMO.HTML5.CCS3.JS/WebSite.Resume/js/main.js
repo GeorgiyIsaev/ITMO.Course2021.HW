@@ -123,17 +123,10 @@ $(document).ready(function(){
             $('.bd').css('display', 'inline-block');  
             $("#count-progect").text( $(".bd").length); //Исправить кол-во проктов
         } 
-
-
-
-
-
-        console.log("Конец условия");  
-
-      "web top"
-        console.log("Конец выбора");   
     });
 
+
+   
 
         
 });
