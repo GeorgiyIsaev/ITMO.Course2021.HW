@@ -50,7 +50,8 @@ $(document).ready(function(){
         var countFullProgect = articleGit.length;
    
 
-        var articleNone =  $(".nonepr");      
+        var articleNone =  $(".nonepr");  
+        console.log("articleNone:", articleNone);    
         var countFullProgectN = articleNone.length;     
 
         return countFullProgect -countFullProgectN;
@@ -71,6 +72,7 @@ $(document).ready(function(){
     }
 
 
+    $("#count-progect").text(countFullProgect()); //Исправить кол-во проктов
 
     $('#prlang').on('change', function (e) {
         var optionSelected = $("option:selected", this);
@@ -81,22 +83,36 @@ $(document).ready(function(){
         var selectValprlang = $("#prlang option:selected").val();
         console.log("selectValprlang", selectValprlang);
 
-        if(selectValprlang == "all"){
-            console.log("Выбран все:");
+        if(selectValprlang == "all"){          
             prAllFull();
         }
-        else if(selectValprlang == "cs"){
-            console.log("Выьран cs");    
+        else if(selectValprlang == "cs"){       
             prNoneFull();      
             $('.cs').css('display', 'inline-block');
-        }
-        else if(selectValprlang == "none"){
-            console.log("Стирание");   
+            $("#count-progect").text( $(".cs").length); //Исправить кол-во проктов
+        }else if(selectValprlang == "cpp"){            
+            prNoneFull();   
+            $('.cpp').css('display', 'inline-block');  
+            $("#count-progect").text( $(".cpp").length); //Исправить кол-во проктов
+        }   
+        else if(selectValprlang == "java"){            
+            prNoneFull();   
+            $('.java').css('display', 'inline-block');  
+            $("#count-progect").text( $(".java").length); //Исправить кол-во проктов
+        }  
+        else if(selectValprlang == "python"){            
+            prNoneFull();   
+            $('.python').css('display', 'inline-block');  
+            $("#count-progect").text( $(".python").length); //Исправить кол-во проктов
+        } 
+         
+        else if(selectValprlang == "none"){      
             prNoneFull();
+            $("#count-progect").text(0);
         }
         console.log("Конец условия");  
 
-        $("#count-progect").text(countFullProgect()); //Исправить кол-во проктов
+      "web top"
         console.log("Конец выбора");   
     });
 
