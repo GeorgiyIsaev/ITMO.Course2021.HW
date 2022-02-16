@@ -29,15 +29,18 @@
       </ul>
       
        <section id="select-section">
-        <select id="prlang" name = "prlang" size = "1">
-			    <optgroup label = "Язык:">
+        <select id="prlang" name = "prlang" size = "1">			
             <option value = "all">Все</option>
+          <optgroup label = "Язык:"> 
             <option value = "cs">С#</option>
             <option value = "cpp">C++</option>
             <option value = "java">Java</option>
             <option value = "python">Python</option>
-          <optgroup label = "Тип проекта:">
+          <optgroup label = "Тип:">
+            <option value = "top">Лучшие проекты</option>
             <option value = "web">Web-проекты</option>
+            <option value = "bd"> Базы данных, SQL</option>
+          <optgroup label = "Для отладки:">
             <option value = "none">Убрать все</option>
 			    </optgroup>
         </select>
@@ -54,7 +57,7 @@
       </section>
 
       <section id="main-section" >
-        <article class="article-git cpp">
+        <article class="article-git web top">
           <img width="100%" src="./img/logolang/logohtml.png"/>
           <a href="https://github.com/GeorgiyIsaev/ITMO.Course2021.HW/tree/main/ITMO.HTML5.CCS3.JS"><h3>ITMO.HTML5.CCS3.JS</h3></a>
           <p>

@@ -85,6 +85,7 @@ $(document).ready(function(){
 
         if(selectValprlang == "all"){          
             prAllFull();
+            $("#count-progect").text( $(".article-git").length); //Исправить кол-во проктов
         }
         else if(selectValprlang == "cs"){       
             prNoneFull();      
@@ -108,7 +109,25 @@ $(document).ready(function(){
         else if(selectValprlang == "none"){      
             prNoneFull();
             $("#count-progect").text(0);
-        }
+        }else if(selectValprlang == "top"){            
+            prNoneFull();   
+            $('.top').css('display', 'inline-block');  
+            $("#count-progect").text( $(".top").length); //Исправить кол-во проктов
+        } else if(selectValprlang == "web"){            
+            prNoneFull();   
+            $('.web').css('display', 'inline-block');  
+            $("#count-progect").text( $(".web").length); //Исправить кол-во проктов
+        } 
+        else if(selectValprlang == "bd"){            
+            prNoneFull();   
+            $('.bd').css('display', 'inline-block');  
+            $("#count-progect").text( $(".bd").length); //Исправить кол-во проктов
+        } 
+
+
+
+
+
         console.log("Конец условия");  
 
       "web top"
