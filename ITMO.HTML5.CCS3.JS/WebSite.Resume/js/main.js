@@ -42,29 +42,23 @@ $(document).ready(function(){
         window.open('mailto:Georgiyelbaf@gmail.com?subject=Анктеа_от_Рекрутера&body=' + fullAnket);
 
     })
-
-    /*Запускаются сразу
-    $("#prlang").change(function() {    
-        alert( "Handler for .change() called." );    
-    });
-    $("#prtype").change(function() {    
-        alert( "Handler for .change() called." );    
-    }).change();*/
-
-    /*Плохой вариант все селекты выполняются последователно!
-    $( "select" ).change(function () {
-      var str = "";
-      $( "select option:selected" ).each(function() {
-        str += $( this ).text() + " ";
-      });
-      $( "div" ).text( str );
-      $( "#count-progect" ).text( str );
-      alert( "Handler for .change() called." );   
-    }).change();
-    */
+       
+    function countFullProgect(){
+        /*Функиця для подсчета открытых проектов*/
+        var articleGit =  $(".article-git");
+        console.log("articleGit:", articleGit);
+        var countFullProgect = articleGit.length;
+        console.log("countFullProgect", countFullProgect);
 
 
-        
+        var articleNone =  $(".nonepr");
+        console.log("articleNone:", articleNone);
+        var countFullProgectN = articleNone.length;
+        console.log("countFullProgectN", countFullProgectN);
+        return countFullProgect -countFullProgectN;
+    }
+
+
 
     $('#prlang').on('change', function (e) {
         var optionSelected = $("option:selected", this);
@@ -74,14 +68,8 @@ $(document).ready(function(){
 
         var selectValprlang = $("#prlang option:selected").val();
         console.log("selectValprlang", selectValprlang);
-       
+
+        $("#count-progect").text(countFullProgect());
     });
-
-    /*Работает
-    $('#selectId').on('change', function () {
-        var selectVal = $("#selectId option:selected").val();
-        console.log("selectVal", selectVal);
-   });*/
-
         
 });
