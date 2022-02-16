@@ -104,8 +104,7 @@ $(document).ready(function(){
             prNoneFull();   
             $('.python').css('display', 'inline-block');  
             $("#count-progect").text( $(".python").length); //Исправить кол-во проктов
-        } 
-         
+        }          
         else if(selectValprlang == "none"){      
             prNoneFull();
             $("#count-progect").text(0);
