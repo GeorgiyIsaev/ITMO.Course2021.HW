@@ -120,7 +120,7 @@ footer{
 /*Статьи*/
 .article-git {
     vertical-align: top;
-    max-width: 28%;
+    width: 283px;
     display: inline-block;
     border: 1px solid black;
     padding: 5px;
@@ -130,7 +130,8 @@ footer{
     box-shadow: 5px 5px 5px rgba(0,0,0,.2);
     border-radius:10px 20px/30px 30px 40px;
     transition-delay: 3s;
-    transition: box-shadow 300ms;  
+    transition: box-shadow 300ms; 
+    border-radius:70px 70px/0px 30px 30p; 
 }  
 .article-git:hover{
     box-shadow: 6px 6px 10px rgba(0,0,0,.7);
