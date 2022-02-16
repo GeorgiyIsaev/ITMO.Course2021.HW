@@ -4,15 +4,17 @@ $(document).ready(function(){
     console.log("jQuery запущен");
 
     function saveToPC(str){
+        /*Функиця для сохранения текста в файл*/
         let blob = new Blob([str], {type: "text/plain"});
         let link = document.createElement("a");
         link.setAttribute("href", URL.createObjectURL(blob));
         link.setAttribute("download", Date.now()+"");
         link.click();
-     }
+    }
 
 
-    $("#go-button").on("click",function(){        
+    $("#go-button").on("click",function(){   
+        /*Функция для нажатия клавиши */     
         console.log("Наведение на кнопку");
         var inputs =  document.getElementsByClassName("my-input");
         console.log("inputs", inputs);
@@ -41,33 +43,45 @@ $(document).ready(function(){
 
     })
 
-    
-   /* $("#go-button").on("mouseover",function(){
+    /*Запускаются сразу
+    $("#prlang").change(function() {    
+        alert( "Handler for .change() called." );    
+    });
+    $("#prtype").change(function() {    
+        alert( "Handler for .change() called." );    
+    }).change();*/
 
-        console.log("Наведение на кнопку");
-        var inputs =  document.getElementsByClassName("my-input");
-        console.log("inputs", inputs);
-        console.log("inputs[0].value",  inputs[0].value);
-        inputs[0].value
-
-        var fullAnket = "-- ОРГАНИЗАЦИЯ: \n";
-        fullAnket +="Название организации: " + inputs[0].value + "\n";
-        fullAnket +="Отдел: "+ inputs[1].value + "\n";
-        fullAnket +="Направление деятельность: "+ inputs[2].value + "\n";
-        fullAnket +="Город: "+ inputs[3].value + "\n";
-        fullAnket +=" -- ТРЕБОВАНИЯ: \n";
-        fullAnket +="Требуемый язык программировании: "+ inputs[4].value + "\n";
-        fullAnket +="Набор технологий: "+ inputs[5].value + "\n";
-        fullAnket +="Доп. наывыки: "+ inputs[6].value + "\n";
-        fullAnket +="-- КОНТАКТНАЯ ИНФОРМАЦИЯ: \n";
-        fullAnket +="E-mail: "+ inputs[7].value + "\n";
-        fullAnket +="Телефон: "+ inputs[8].value + "\n";
-        fullAnket +="ФИО рекурутера: "+ inputs[9].value + "\n";
+    /*Плохой вариант все селекты выполняются последователно!
+    $( "select" ).change(function () {
+      var str = "";
+      $( "select option:selected" ).each(function() {
+        str += $( this ).text() + " ";
+      });
+      $( "div" ).text( str );
+      $( "#count-progect" ).text( str );
+      alert( "Handler for .change() called." );   
+    }).change();
+    */
 
 
-        console.log("fullAnket",  fullAnket);
-        alert("Анкета отправлена: \n" + fullAnket);
+        
 
-    })/*/
+    $('#prlang').on('change', function (e) {
+        var optionSelected = $("option:selected", this);
+        console.log("optionSelected:", optionSelected);
+        var valueSelected = this.value;
+        console.log("valueSelected:", valueSelected);
 
+        var selectValprlang = $("#prlang option:selected").val();
+        console.log("selectValprlang", selectValprlang);
+       
+    });
+
+    /*Работает
+    $('#selectId').on('change', function () {
+        var selectVal = $("#selectId option:selected").val();
+        console.log("selectVal", selectVal);
+   });*/
+
+        
 });
