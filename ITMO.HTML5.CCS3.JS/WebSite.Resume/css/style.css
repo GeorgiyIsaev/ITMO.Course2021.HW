@@ -76,7 +76,6 @@ footer{
     height: 30px;
     background-color: #666;
     padding-left: 25px;
-    min-width: 470px;
 }
 .navbar li {
     float: left;
@@ -246,7 +245,7 @@ footer{
 /*Секция для выбора проектов*/
 #select-section{
     padding: 10px 30px 0px 30px;
-    width: 900px;
+    max-width: 900px;
     display:inline-block;
 }
 #select-section div{    
