@@ -265,6 +265,22 @@ footer{
 }
 
 
+/*Для топ-проектов*/
+.top::before {
+    content:"TOП";
+    display:block;
+    width: 50px;
+    height: 20px;
+    background: #d9d960;
+    position: absolute;
+    text-align:center;
+    margin-top:10px;
+    margin-left:10px;
+    border-radius: 18px;
+}
+
+
+
 @media screen and (max-width: 650px) {
     /*.navbar{
         display: none;
