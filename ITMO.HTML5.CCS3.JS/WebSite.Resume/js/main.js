@@ -46,16 +46,28 @@ $(document).ready(function(){
     function countFullProgect(){
         /*Функиця для подсчета открытых проектов*/
         var articleGit =  $(".article-git");
-        console.log("articleGit:", articleGit);
+       /* console.log("articleGit:", articleGit);*/
         var countFullProgect = articleGit.length;
-        console.log("countFullProgect", countFullProgect);
+   
 
+        var articleNone =  $(".nonepr");      
+        var countFullProgectN = articleNone.length;     
 
-        var articleNone =  $(".nonepr");
-        console.log("articleNone:", articleNone);
-        var countFullProgectN = articleNone.length;
-        console.log("countFullProgectN", countFullProgectN);
         return countFullProgect -countFullProgectN;
+    }
+
+    function prNoneFull(){
+        /*Функция что бы скрыть все прокты */
+       /* $('.article-git').hover(function () {
+              $(this).addClass('nonepr');
+        });*/
+        $('.article-git').css('display', 'none');
+        console.log("функция c добавлением none:");
+    }
+    function prAllFull(){    
+        /*$(".nonepr").removeClass('nonepr');*/  
+        $('.article-git').css('display', 'inline-block');
+        console.log("функция c возвратом всех эл-тов:");
     }
 
 
@@ -69,7 +81,25 @@ $(document).ready(function(){
         var selectValprlang = $("#prlang option:selected").val();
         console.log("selectValprlang", selectValprlang);
 
-        $("#count-progect").text(countFullProgect());
+        if(selectValprlang == "all"){
+            console.log("Выбран все:");
+            prAllFull();
+        }
+        else if(selectValprlang == "cs"){
+            console.log("Выьран cs");    
+            prNoneFull();      
+            $('.cs').css('display', 'inline-block');
+        }
+        else if(selectValprlang == "none"){
+            console.log("Стирание");   
+            prNoneFull();
+        }
+        console.log("Конец условия");  
+
+        $("#count-progect").text(countFullProgect()); //Исправить кол-во проктов
+        console.log("Конец выбора");   
     });
+
+
         
 });
