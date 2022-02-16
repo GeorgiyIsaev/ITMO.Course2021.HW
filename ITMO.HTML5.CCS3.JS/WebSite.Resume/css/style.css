@@ -57,32 +57,32 @@ footer{
 
 
 /*МЕНЮ*/
-#navbar ul {
+.navbar ul {
     display: none;
     background-color: #f90;
     position: absolute;
     top: 100%;
 }
-#navbar li:hover ul {
+.navbar li:hover ul {
      display: block; 
     }
-#navbar, #navbar ul {
+.navbar, .navbar ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
 }
-#navbar {
+.navbar {
     height: 30px;
     background-color: #666;
     padding-left: 25px;
     min-width: 470px;
 }
-#navbar li {
+.navbar li {
     float: left;
     position: relative;
     height: 100%;
 }
-#navbar li a {
+.navbar li a {
     display: block;
     padding: 6px;
     width: 140px;
@@ -90,9 +90,22 @@ footer{
     text-decoration: none;
     text-align: center;
 }
-#navbar ul li { float: none; }
-#navbar li:hover { background-color: #f90; }
-#navbar ul li:hover { background-color: #666; }
+.navbar ul li { float: none; }
+.navbar li:hover { background-color: #f90; }
+.navbar ul li:hover { background-color: #666; }
+
+/*Мини меню*/
+.submenu{
+    list-style: none;
+    padding: 0px;
+    border: 1px solid #aaa;
+}
+.submenu.navbar{
+    display: none;
+}
+.mainmenu.navbar{
+    display: block;
+}
 /*Конец меню*/
 
 
@@ -226,10 +239,17 @@ footer{
 
 
 @media screen and (max-width: 650px) {
-    #navbar{
+    /*.navbar{
         display: none;
-    }
+    }*/
     .label-info{
         display: none;
+    }  
+    .submenu.navbar{
+        display: block;
     }
+    .mainmenu.navbar{
+        display: none;
+    }
+
 }
