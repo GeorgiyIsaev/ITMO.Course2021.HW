@@ -38,7 +38,7 @@ footer{
     /*position: fixed; */
     position: absolute; 
     bottom: 0;
-    width: 1000;
+    max-width: 1000;
 }
 
 
@@ -126,7 +126,7 @@ footer{
 /*Статьи*/
 .article-git {
     vertical-align: top;
-    width: 283px;
+    width: 273px;
     display: inline-block;
     border: 1px solid black;
     padding: 5px;
@@ -250,19 +250,20 @@ footer{
 
 /*Секция для выбора проектов*/
 #select-section{
-    padding: 10px 30px 0px 30px;
+    padding: 10px 50px 0px 50px;
     max-width: 900px;
     display:inline-block;
 }
 #select-section div{    
     display:inline-block;    
     color:#5f6466;
+    margin-right: 8px;
 }
 #select-section select{
-    width: 145px;
-    height: 20px;
-    margin-right: 10;
-    border-radius: 8px;
+    width: 165px;
+    height: 25px;
+    margin-right: 25px;
+    border-radius: 12px;
 }
 
 .nonepr{
@@ -280,7 +281,7 @@ footer{
     position: absolute;
     text-align:center;
     margin-top:10px;
-    margin-left:10px;
+    margin-left:210px;
     border-radius: 18px;
 }
 
@@ -300,4 +301,13 @@ footer{
         display: none;
     }
 
+}
+
+@media screen and (max-width: 440px) {
+    #select-section {
+        padding: 10px 10px  0px 10px;
+    }
+    #select-section select {
+        margin-right: 5px;
+    }
 }

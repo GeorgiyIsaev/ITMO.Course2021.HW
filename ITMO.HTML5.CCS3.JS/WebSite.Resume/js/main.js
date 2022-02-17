@@ -45,7 +45,7 @@ $(document).ready(function(){
         console.log("fullAnket",  fullAnket);
         /*alert("Анкета отправлена: \n" + fullAnket);*/
        /* saveToPC(fullAnket);*/
-        var tema = "Анктеа от Рекрутера [" + inputs[0].value + "]";
+        var tema = "Анкета от Рекрутера [" + inputs[0].value + "]";
         window.open('mailto:Georgiyelbaf@gmail.com?subject='+tema+'&body=' + fullAnket);
 
     })
